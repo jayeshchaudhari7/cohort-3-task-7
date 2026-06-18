@@ -28,6 +28,7 @@ function ui(data = tasksArr) {
                     </div>`;
   });
 }
+ui();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault(form);
