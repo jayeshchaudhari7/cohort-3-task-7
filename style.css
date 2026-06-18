@@ -11,10 +11,11 @@ body {
 }
 
 main {
-  height: fit-content;
+  min-height: 100vh;
   width: 100%;
-  padding: 20px;
+  padding: 2vw;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
   
 }
 
@@ -26,16 +27,16 @@ main {
 .header {
   height: 10vh;
   width: 100%;
-  padding: 0px 20px;
+  padding: 0px 2vw;
   display: flex;
   justify-content: space-between;
 }
 .header h1 {
-  font-size: 40px;
+  font-size: 3rem;
   font-family: system-ui;
 }
 .header i {
-  font-size: 30px;
+  font-size: 2.5rem;
 }
 
 .container {
@@ -46,33 +47,36 @@ main {
 
 .left {
   width: 20%;
-  padding: 40px 20px;
+  padding: 6vh 2vw;
   border-right: 1px solid black;
 }
 .left h4 {
   color: #000000;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 10px 10px 0px 0px;
-  padding: 10px;
+  padding: 1vw;
   background-color: #b3b3b3;
 }
 .task-status {
   color: #000000;
-
   width: 100%;
   background-color: #ebebeb;
   display: flex;
   flex-direction: column;
-  padding: 10px 40px;
+  padding: 2vh 4vw;
   border-radius: 0px 0px 10px 10px;
   position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./sticky-notes-png-free-to-use-png-resource-removebg-preview.png);
 }
 
 .task-status p {
-  padding: 10px;
-  font-size: 13px;
+  padding: 1vw;
+  font-size: 1rem;
   border-left: 1px solid black;
   cursor: pointer;
   position: relative;
@@ -95,18 +99,18 @@ main {
   text-transform: uppercase;
 }
 .taskstatus {
-  font-size: 14px;
+  font-size: 1rem;
   font-weight: 100;
 }
 
 .createTask {
-  padding: 10px 20px;
+  padding: 1vw 2vw;
   border-radius: 10px;
   border: none;
 }
 
 #search {
-  padding: 10px;
+  padding: 1vw;
   border-radius: 20px;
   border: none;
   background-color: #ebebeb;
@@ -114,8 +118,8 @@ main {
 }
 
 .top {
-  padding: 20px;
-  gap: 20px;
+  padding: 2vw;
+  gap: 2vw;
   display: flex;
   align-items: end;
   justify-content: end;
@@ -125,7 +129,7 @@ main {
   align-items: center;
   background-color: #ebebeb;
   border-radius: 20px;
-  padding: 0px 10px;
+  padding: 0px 1vw;
   cursor: pointer;
 }
 
@@ -133,7 +137,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 1vw;
   overflow-y: scroll;
   height: 100%;
   scrollbar-width: none;
@@ -150,7 +154,7 @@ main {
 }
 
 .btns button {
-  padding: 5px 15px;
+  padding: 0.5vw 1vw;
   border-radius: 20px;
   border: 1px solid black;
 }
@@ -169,21 +173,21 @@ main {
 }
 form {
   display: flex;
-  gap: 10px;
+  gap: 1vw;
 }
 
 .task {
-  padding: 10px;
+  padding: 1vw;
   border-radius: 10px;
   border: none;
 }
 .submit {
-  padding: 10px;
+  padding: 1vw;
   border-radius: 20px;
   border: none;
 }
 .status {
-  padding: 10px;
+  padding: 1vw;
   border-radius: 10px;
   border: none;
 }
@@ -194,17 +198,23 @@ form {
 }
 .close i {
   color: aliceblue;
-  font-size: 40px;
+  font-size: 4vw;
 }
 
 
 
 
+
 .pipeline{
+    width: 100%;
     border-top: 1px solid black;
-    padding: 40px;
+    padding: 4vw;
     display: flex;
-    gap: 40px;
+    gap: 4vw;
+}
+
+.div1,.div2,.div3{
+    width: 30%;
 }
 
 .flow{
@@ -214,8 +224,8 @@ form {
 }
 
 .step{
-    width: 250px;
-    padding: 15px;
+    width: 25vw;
+    padding: 1vw;
     text-align: center;
     border: 2px solid #333;
     border-radius: 10px;
@@ -224,24 +234,77 @@ form {
 }
 
 .arrow{
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 .event-demo{
-    padding: 20px;
+    padding: 2vw;
 }
 
 .grandparent,.grandparent2{
-    padding: 40px;
+    padding: 4vw;
     background: #ffb4b4;
 }
 
 .parent,.parent2{
-    padding: 40px;
+    padding: 4vw;
     background: #a0d8ff;
 }
 
 .child,.child2{
-    padding: 10px 20px;
+    padding: 1vw 2vw;
+}
+
+@media (max-width: 500px){
+    
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.left {
+  width: 100%;
+}
+.right {
+  width: 100%;
+}
+
+.pipeline{
+    width: 100%;
+    border-top: 1px solid black;
+    padding: 4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+}
+
+.div1,.div2,.div3{
+    width: 100%;
+}
+
+
+.form-div {
+  width: 100%;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.header {
+  height: 5vh;
+  width: 100%;
+  padding: 0px 2vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  font-family: system-ui;
+}
+.header i {
+  font-size: 1rem;
+}
 }
