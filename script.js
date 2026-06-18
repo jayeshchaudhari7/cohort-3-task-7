@@ -13,7 +13,8 @@ let tasksArr = JSON.parse(localStorage.getItem("tasks")) || [];
 let editIdx = null;
 
 function ui(data = tasksArr) {
-  taskContainer.innerHTML = "";
+    taskContainer.innerHTML = "";
+
   data.forEach((elem, idx) => {
     taskContainer.innerHTML += `<div class="task-card">
                         <div class="text">
@@ -27,7 +28,6 @@ function ui(data = tasksArr) {
                     </div>`;
   });
 }
-ui();
 
 form.addEventListener("submit", (e) => {
   e.preventDefault(form);
@@ -123,8 +123,7 @@ const parent = document.querySelector(".parent");
 const child = document.querySelector(".child");
 
 grandparent.addEventListener("click", () => {
-    
-    console.log("Grandparent");
+  console.log("Grandparent");
 });
 
 parent.addEventListener("click", () => {
@@ -132,7 +131,7 @@ parent.addEventListener("click", () => {
 });
 
 child.addEventListener("click", () => {
-    console.log('Event bubbling output');
+  console.log("Event bubbling output");
   console.log("Child");
 });
 
@@ -143,7 +142,7 @@ const child2 = document.querySelector(".child2");
 grandparent2.addEventListener(
   "click",
   () => {
-    console.log('Event capturing output');
+    console.log("Event capturing output");
     console.log("Grandparent");
   },
   true,
