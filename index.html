@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <main class="">
+
+        <section>
+            <div class="header">
+                <h1>Task Manager</h1>
+                <i class="ri-sun-fill"></i>
+            </div>
+            <div class="container">
+                <div class="left">
+                    <h4>Tasks</h4>
+                    <div class="task-status">
+                        <p class="active">All</p>
+                        <p>Completed</p>
+                        <p>Working</p>
+                        <p>Pending</p>
+
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="search-bar"><input type="text" id="search" placeholder="search" /><i
+                                class="ri-search-line"></i></div>
+                        <button class="createTask">Create Task</button>
+                    </div>
+                    <div class="task-cards-container">
+                        <h1>No Task Created Yet </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-div">
+                <div class="close"><i class="ri-close-large-line"></i></div>
+                <form>
+                    <input class="task" type="text" id="task" placeholder="Enter task">
+                    <select id="status" class="status">
+                        <option value="Pending">Pending</option>
+                        <option value="Working">Working</option>
+                        <option value="Completed">Completed</option>
+                    </select>
+                    <input class="submit" type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+
+
+        <section class="pipeline">
+
+                <div>
+                    <h2>Event Bubbling</h2>
+
+                    <div class="grandparent">
+                        Grandparent
+                        <div class="parent">
+                            Parent
+                            <button class="child">Child Button</button>
+                        </div>
+                    </div>
+                    <h3>Please see the output on console</h3>
+                </div>
+            <div>
+                <h2>Browser Rendering Pipeline</h2>
+
+                <div class="flow">
+                    <div class="step">HTML</div>
+                    <div class="arrow">↓</div>
+
+                    <div class="step">Parsing</div>
+                    <div class="arrow">↓</div>
+
+                    <div class="step">Tokenization</div>
+                    <div class="arrow">↓</div>
+
+                    <div class="step">DOM Tree</div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="step">CSS</div>
+                    <div class="arrow">↓</div>
+
+                    <div class="step">CSSOM Tree</div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="step merge">
+                        DOM Tree + CSSOM Tree
+                    </div>
+
+                    <div class="arrow">↓</div>
+
+                    <div class="step">Render Tree</div>
+                </div>
+            </div>
+            <div>
+                    <h2>Event Capturing</h2>
+
+                    <div class="grandparent2">
+                        Grandparent
+                        <div class="parent2">
+                            Parent
+                            <button class="child2">Child Button</button>
+                        </div>
+                    </div>
+
+                    <h3>Please see the output on console</h3>
+                </div>
+        </section>
+
+    </main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
