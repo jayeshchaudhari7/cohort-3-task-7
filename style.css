@@ -109,6 +109,13 @@ main {
   border: none;
 }
 
+.createTask:hover {
+  scale: 1.1;
+  background-color: #000000;
+  color: #a0d8ff;
+  transition:ease-in;
+}
+
 #search {
   padding: 1vw;
   border-radius: 20px;
